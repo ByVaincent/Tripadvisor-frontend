@@ -1,0 +1,14 @@
+footer {
+  background-color: #faf1ed;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+}
+footer img {
+  width: 40px;
+  margin-right: 1em;
+}
