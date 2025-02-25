@@ -1,0 +1,18 @@
+body {
+  font-family: "Trip Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 1095px;
+  margin: 0 auto;
+}
