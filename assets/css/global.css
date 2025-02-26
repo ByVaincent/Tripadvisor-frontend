@@ -1,63 +1,6 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Trip Sans", sans-serif;
-}
-
-h1 {
-  font-size: 3em;
-  font-weight: 900;
-  margin-bottom: 0.3em;
-}
-
-h2 {
-  font-size: 2em;
-  font-weight: 700;
-  margin-bottom: 1em;
-}
-
-h3 {
-  font-size: 1.7em;
-  font-weight: 500;
-  margin-bottom: 0.5em;
-}
-
-h4 {
-  font-size: 1.2em;
-  margin: 0.5em 0;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-button {
-  color: #ffffff;
-  background-color: black;
-  font-weight: 500;
-  padding: 0.6em;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
-}
-
-button:hover {
-  color: black;
-  background-color: rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-strong {
-  font-weight: 500;
-  padding: 0 0.2em;
-}
-
-section {
-  margin: 40px 0;
-}
-
-.container {
-  width: 1095px;
-  margin: 0 auto;
-}
+@import "reset.css";
+@import "font.css";
+@import "common-rules.css";
+@import "header.css";
+@import "main.css";
+@import "footer.css";

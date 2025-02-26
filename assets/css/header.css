@@ -3,6 +3,10 @@ header {
   padding: 0.5em 0;
   font-size: 1em;
   font-weight: 500;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 50;
 }
 
 header .container {
