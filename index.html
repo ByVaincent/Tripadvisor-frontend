@@ -16,24 +16,32 @@
   <body>
     <header>
       <div class="container">
+        <div class="mobile-menu only-s-screen">
+          <div class="bars-mobile-menu"></div>
+          <div class="bars-mobile-menu"></div>
+          <div class="bars-mobile-menu"></div>
+        </div>
         <img
           src="./assets/logos/Tripadvisor Logo.svg"
           alt="Logo de tripadvisor"
         />
 
         <div class="tools">
-          <div class="tool">
-            <i class="fa-solid fa-pencil"></i><a href="#">Avis</a>
+          <div class="tool only-l-xl-screen">
+            <a href="#"></a><i class="fa-solid fa-pencil"></i><span class ="only-xl-screen">Avis</span></a>
+          </div>
+          <div class="tool only-l-xl-screen">
+            <a href="#"></a><i class="fa-regular fa-heart"></i><span class ="only-xl-screen">Voyage</span></a>
+          </div>
+          <div class="tool only-l-xl-screen">
+            <a href="#"></a><i class="fa-regular fa-bell"></i><span class ="only-xl-screen">Alerts</span></a>
+          </div>
+          <button class="connection-button only-l-xl-screen">Connectez-vous</button>
+          <div class="tool only-s-screen">
+            <a href="#"></a><i class="fa-solid fa-magnifying-glass"></i><span class ="only-xl-screen">Paniez</span></a>
           </div>
           <div class="tool">
-            <i class="fa-regular fa-heart"></i><a href="#">Voyage</a>
-          </div>
-          <div class="tool">
-            <i class="fa-regular fa-bell"></i><a href="#">Alerts</a>
-          </div>
-          <button class="connection-button">Connectez-vous</button>
-          <div class="tool">
-            <i class="fa-solid fa-cart-shopping"></i><a href="#">Paniez</a>
+            <a href="#"></a><i class="fa-solid fa-cart-shopping"></i><span class ="only-xl-screen">Paniez</span></a>
           </div>
         </div>
       </div>
@@ -48,7 +56,7 @@
           </p>
         </section>
         <section class="nav">
-          <nav>
+          <nav class="only-s-xl-screen nav-s-xl-screen">
             <a href="#"
               ><div class="custom-link">
                 <p>Hôtels</p>
@@ -85,6 +93,50 @@
               </div></a
             >
           </nav>
+          <nav class="nav-l-screen">
+            <div>
+               <a href="#"
+              ><div class="custom-link">
+                <p>Hôtels</p>
+                <i class="fa-solid fa-bed"></i></div
+            ></a>
+            <a href="#">
+              <div class="custom-link">
+                <p>Locations de vacances</p>
+                <i class="fa-solid fa-key"></i>
+              </div>
+            </a>
+            <a href="#">
+              <div class="custom-link">
+                <p>Activités</p>
+                <i class="fa-solid fa-ticket-simple"></i>
+              </div>
+            </a>
+            </div>
+            <div>
+
+              <a href="#">
+              <div class="custom-link">
+                <p>Restaurants</p>
+                <i class="fa-solid fa-utensils"></i>
+              </div>
+            </a>
+            <a href="#">
+              <div class="custom-link">
+                <p>Forums de voyage</p>
+                <i class="fa-solid fa-comments"></i>
+              </div>
+            </a>
+            <a href="#"
+              ><div class="custom-link">
+                <p>Plus</p>
+                <i class="logo-next">...</i>
+              </div></a
+            >
+            </div>
+           
+            
+          </nav>
         </section>
         <section class="pictures">
             <div class="picture-1">
@@ -96,7 +148,11 @@
             <div class="picture-3"></div></div>
         </section>
         <section class="article">
+          <div class="nav-main">
             <nav><a href="#">Europe</a> <span>></span> <a href="#">France</a> <span>></span><a href="#">Île-de-France</a> <span>></span> <a href="#">Paris</a></nav>
+            <a href="#">Visiter : Paris</a>
+          </div>
+          
             <div>
                 <article>
                     <h2>La Ville Lumière éblouit en tous points </h2>
@@ -108,7 +164,10 @@
                     <p>Créez un voyage pour enregistrer et organiser toutes vos idées et les visualiser sur une carte.</p>
                     <button class="cta-button">Créer un voyage</button>
                     </div>
-                    <img src="./assets/img/Screenshot 2025-02-25 at 17.22.42.png" alt="">
+                    <div class="cta-img">
+                      <img src="./assets/img/Screenshot 2025-02-25 at 17.22.42.png" alt="">
+                    </div>
+                    
                     
                 </div>
             </div>

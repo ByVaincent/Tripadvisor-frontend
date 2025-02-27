@@ -1,0 +1,133 @@
+.entertainment {
+  display: flex;
+  height: 320px;
+  gap: 10px;
+  margin-bottom: 2em;
+}
+
+.to-eat {
+  display: flex;
+  height: 320px;
+  gap: 10px;
+}
+
+.unmissable-first-div {
+  flex: 1;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  padding-right: 1.5em;
+}
+.unmissable-first-div p {
+  margin-bottom: 1em;
+}
+
+.unmissable-first-div a {
+  text-decoration: underline;
+  color: grey;
+}
+
+.thumbnails-container {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+  flex: 3;
+  overflow: scroll;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+
+.thumbnail {
+  width: calc((100% - 40px) / 3);
+  flex-shrink: 0;
+}
+.thumbnail:hover {
+  cursor: pointer;
+}
+
+.thumbnail-picture {
+  width: 100%;
+  aspect-ratio: 27 / 20;
+  position: relative;
+}
+
+.thumbnail-picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.thumbnail:hover .thumbnail-picture::after {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.thumbnail:hover h4 {
+  text-decoration: underline;
+}
+.thumbnail-picture img:first-child {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.white-circle {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: white;
+  padding: 4%;
+  border-radius: 50%;
+  font-size: 1.3em;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.travelers-choice {
+  width: 27%;
+  position: absolute;
+  bottom: 3%;
+  left: 4%;
+  z-index: 2;
+}
+
+@media (min-width: 1185px) {
+}
+
+@media (max-width: 1184px) and (min-width: 1025px) {
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .unmissable {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .thumbnail {
+    width: calc((100% - 40px) / 2.5);
+  }
+}
+
+@media (max-width: 768px) {
+  .unmissable {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .entertainment {
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 70px;
+  }
+
+  .to-eat {
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 70px;
+  }
+  .thumbnail {
+    width: calc((100% - 40px) / 1.5);
+  }
+}

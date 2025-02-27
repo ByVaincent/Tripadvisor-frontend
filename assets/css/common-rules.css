@@ -20,7 +20,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: 500;
   margin-bottom: 0.5em;
 }
@@ -55,10 +55,55 @@ strong {
 }
 
 section {
-  margin: 40px 0;
+  margin: 30px 0;
 }
 
 .container {
-  width: 1095px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+@media (min-width: 1185px) {
+  .only-s-screen {
+    display: none;
+  }
+  .only-l-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 1184px) and (min-width: 1025px) {
+  .container {
+    max-width: 1024px;
+  }
+  .only-s-screen {
+    display: none;
+  }
+  .only-l-screen {
+    display: none;
+  }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .only-xl-screen {
+    display: none;
+  }
+  .only-s-screen {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .only-xl-screen {
+    display: none;
+  }
+  .only-l-xl-screen {
+    display: none;
+  }
+  .only-l-screen {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.5em;
+  }
 }

@@ -1,0 +1,46 @@
+.travelers-guide-thumbnails {
+  display: flex;
+  gap: 2%;
+}
+
+.thumbnails-2 {
+  flex: 1;
+}
+
+.visits-picture {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
+.signature {
+  margin-top: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.signature img {
+  width: 10%;
+  aspect-ratio: 1/1;
+  margin-right: 1em;
+}
+
+@media (min-width: 1185px) {
+}
+
+@media (max-width: 1184px) and (min-width: 1025px) {
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .travelers-guide {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .travelers-guide {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

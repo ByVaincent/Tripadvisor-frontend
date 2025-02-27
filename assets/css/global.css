@@ -2,5 +2,9 @@
 @import "font.css";
 @import "common-rules.css";
 @import "header.css";
-@import "main.css";
+@import "main-section-nav.css";
+@import "main-section-pictures.css";
+@import "main-section-article.css";
+@import "main-section-unmissable.css";
+@import "main-section-travellers-guide.css";
 @import "footer.css";
