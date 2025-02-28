@@ -6,14 +6,35 @@
     <title>Tripadvisor Paris</title>
 
     <link rel="stylesheet" href="./assets/css/global.css" />
-  
 
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="./assets/scripts/script.js"></script>
     <script
       src="https://kit.fontawesome.com/a4af405596.js"
       crossorigin="anonymous"
-    ></script>
+    ></script>777888
+
   </head>
   <body>
+
+   <div class="modal hide">
+      <div class="modal-div">
+              <i class="fa-solid fa-xmark" id="exit-modal"></i><h2>Formulaire de contact</h2>
+      <form >
+        
+
+       <input type="text" name ="firstname" id="first-name" placeholder="Prénom" required>
+       <input type="text" name="name" id="name" placeholder="Nom" required>
+       <input type="email" name="email" id="email" placeholder="Email" required>
+       <input type="text" name="subject" id="subject" placeholder="Sujet" required>
+      <textarea name="message" id="message" placeholder="Message:" required></textarea>
+      <input type="submit" value="Envoyer">
+
+      </form>
+      </div>
+
+      
+    </div>
     <header>
       <div class="container">
         <div class="mobile-menu only-s-screen">
@@ -36,7 +57,7 @@
           <div class="tool only-l-xl-screen">
             <a href="#"><i class="fa-regular fa-bell"></i><span class ="only-xl-screen">Alerts</span></a>
           </div>
-          <button class="connection-button only-l-xl-screen">Connectez-vous</button>
+          <button class="connection-button only-l-xl-screen" id="connection-button">Connectez-vous</button>
           <div class="tool only-s-screen">
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i><span class ="only-xl-screen">Paniez</span></a>
           </div>
@@ -142,7 +163,7 @@
                     <div class="thumbnail"><div class="thumbnail-picture"><img src="./assets/img/Amazingly Detailed.jpg" alt="Photo de Notre-Dame"><div class="white-circle"><i class="fa-regular fa-heart"></i></div><img class="travelers-choice" src="./assets/img/Travelers Choice Awards 2024 Winner.gif" alt="Logo traveler's choice"></div><h4>Notre-Dame de Paris</h4><p>Lorem ipsum dolor sit amet.</p></div>
                     <div class="thumbnail"><div class="thumbnail-picture"><img src="./assets/img/Louvre (1).jpg" alt="Photo du musée du Louvre"><div class="white-circle"><i class="fa-regular fa-heart"></i></div><img class="travelers-choice" src="./assets/img/Travelers Choice Awards 2024 Winner.gif" alt="Logo traveler's choice"></div><h4>Musée du Louvre</h4><p>Lorem ipsum dolor sit amet.</p></div>
                     <div class="thumbnail"><div class="thumbnail-picture"><img src="./assets/img/Arc de Triomphe at Night.jpg" alt="Photo de l'Arc de Triomphe"><div class="white-circle"><i class="fa-regular fa-heart"></i></div><img class="travelers-choice" src="./assets/img/Travelers Choice Awards 2024 Winner.gif" alt="Logo traveler's choice"></div><h4>Arc de Triomphe</h4><p>Lorem ipsum dolor sit amet.</p></div>
-                    <div class="thumbnail"><div class="thumbnail-picture"><img src="./assets/img/Amazingly Detailed.jpg" alt="Photo de Notre-Dame"><div class="white-circle"><i class="fa-regular fa-heart"></i></div><img class="travelers-choice" src="./assets/img/Travelers Choice Awards 2024 Winner.gif" alt="Logo traveler's choice"></div><h4>Notre-Dame de Paris</h4><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="thumbnail"><div class="thumbnail-picture"><img sr c="./assets/img/Amazingly Detailed.jpg" alt="Photo de Notre-Dame"><div class="white-circle"><i class="fa-regular fa-heart"></i></div><img class="travelers-choice" src="./assets/img/Travelers Choice Awards 2024 Winner.gif" alt="Logo traveler's choice"></div><h4>Notre-Dame de Paris</h4><p>Lorem ipsum dolor sit amet.</p></div>
                     <div class="thumbnail"><div class="thumbnail-picture"><img src="./assets/img/Louvre (1).jpg" alt="Photo du musée du Louvre"><div class="white-circle"><i class="fa-regular fa-heart"></i></div><img class="travelers-choice" src="./assets/img/Travelers Choice Awards 2024 Winner.gif" alt="Logo traveler's choice"></div><h4>Musée du Louvre</h4><p>Lorem ipsum dolor sit amet.</p></div>
                     <div class="thumbnail"><div class="thumbnail-picture"><img src="./assets/img/Arc de Triomphe at Night.jpg" alt="Photo de l'Arc de Triomphe"><div class="white-circle"><i class="fa-regular fa-heart"></i></div><img class="travelers-choice" src="./assets/img/Travelers Choice Awards 2024 Winner.gif" alt="Logo traveler's choice"></div><h4>Arc de Triomphe</h4><p>Lorem ipsum dolor sit amet.</p></div>
                     <div class="thumbnail"><div class="thumbnail-picture"><img src="./assets/img/Amazingly Detailed.jpg" alt="Photo de Notre-Dame"><div class="white-circle"><i class="fa-regular fa-heart"></i></div><img class="travelers-choice" src="./assets/img/Travelers Choice Awards 2024 Winner.gif" alt="Logo traveler's choice"></div><h4>Notre-Dame de Paris</h4><p>Lorem ipsum dolor sit amet.</p></div>

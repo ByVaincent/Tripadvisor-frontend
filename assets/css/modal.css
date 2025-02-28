@@ -1,0 +1,74 @@
+.modal {
+  position: fixed;
+  z-index: 51;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal div {
+  background-color: white;
+  width: 400px;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal i {
+  align-self: flex-end;
+  font-size: 2em;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.modal i:hover {
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+}
+
+.modal form input {
+  height: 30px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.modal form textarea {
+  resize: none;
+  height: 250px;
+  padding: 5px;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.modal input[type="submit"]:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 1024px) {
+  .modal div {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal div {
+    width: 90%;
+  }
+  .modal form textarea {
+    height: 150px;
+  }
+}
