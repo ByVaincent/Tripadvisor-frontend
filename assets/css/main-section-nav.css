@@ -47,26 +47,40 @@
   }
 }
 @media (max-width: 1024px) and (min-width: 769px) {
-  .nav .only-s-xl-screen {
-    display: none;
-  }
-
-  .nav-l-screen > div {
-    display: flex;
-    gap: 10px;
-    margin: 10px;
-  }
-
   .title {
     margin: 30px 10px 0 10px;
+  }
+
+  .nav {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .nav-s-xl-screen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow: scroll;
+  }
+
+  .nav a {
+    border: 1px solid black;
+    border-radius: 15px;
+    flex: auto;
+    width: calc((100% - 20px) / 3);
+  }
+
+  .custom-link {
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+    width: 100%;
+    padding: 10px;
+    line-height: 1.2em;
   }
 }
 
 @media (max-width: 768px) {
-  .nav-l-screen {
-    display: none;
-  }
-
   .nav div {
     flex-shrink: 0;
     width: 250px;
