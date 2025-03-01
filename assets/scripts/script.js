@@ -1,13 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
+  //Response's elements
+  const formElement = document.querySelector(".modal form");
+  const responseElement = document.querySelector(".response");
+
   const modalElement = document.querySelector(".modal");
   //open the connection window
   const connectButtonElement = document.getElementById("connection-button");
 
   connectButtonElement.addEventListener("click", () => {
     modalElement.classList.toggle("hide");
+    formElement.classList.remove("hide");
+    responseElement.classList.add("hide");
   });
 
-  //clode the modal window
+  //close the modal window
   const crossModalElement = document.getElementById("exit-modal");
 
   crossModalElement.addEventListener("click", () => {
@@ -21,7 +27,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   //send the form
-  const formElement = document.querySelector(".modal form");
 
   formElement.addEventListener("submit", async (event) => {
     event.preventDefault();
@@ -31,13 +36,33 @@ document.addEventListener("DOMContentLoaded", () => {
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
 
-    const reponse = await axios.post("http://localhost:3000", {
-      firstName,
-      name,
-      email,
-      subject,
-      message,
-    });
-    console.log(response);
+    const responseMessageElement = document.querySelector(".response p");
+    const responseIconElement = document.getElementById("response-icon");
+
+    try {
+      const response = await axios.post("http://localhost:3000/connection", {
+        firstName,
+        name,
+        email,
+        subject,
+        message,
+      });
+
+      //display positive response
+      formElement.classList.toggle("hide");
+      responseElement.classList.toggle("hide");
+
+      responseIconElement.classList.add("fa-solid", "fa-check");
+
+      responseMessageElement.textContent = response.data;
+      formElement.reset();
+    } catch (error) {
+      //display failed response
+      responseIconElement.classList.add("fa-solid", "fa-exclamation");
+      responseMessageElement.textContent =
+        "Impossible de se connecté au serveur... \nVeuillez essayer de nouveau dans quelques instants";
+      formElement.classList.toggle("hide");
+      responseElement.classList.toggle("hide");
+    }
   });
 });

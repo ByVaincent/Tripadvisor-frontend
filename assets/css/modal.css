@@ -9,7 +9,7 @@
   align-items: center;
 }
 
-.modal div {
+.modal-div {
   background-color: white;
   width: 400px;
   border-radius: 15px;
@@ -20,7 +20,7 @@
   align-items: center;
 }
 
-.modal i {
+.modal .modal-div i {
   align-self: flex-end;
   font-size: 2em;
   color: rgba(0, 0, 0, 0.5);
@@ -32,7 +32,7 @@
   cursor: pointer;
 }
 
-.modal form {
+.modal-form {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -58,6 +58,24 @@
 .modal input[type="submit"]:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+.response {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal .response i {
+  align-self: center;
+  font-size: 4em;
+}
+
+.modal .response p {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 @media (max-width: 1024px) {
   .modal div {
     width: 50%;

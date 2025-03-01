@@ -12,25 +12,28 @@
     <script
       src="https://kit.fontawesome.com/a4af405596.js"
       crossorigin="anonymous"
-    ></script>777888
+    ></script>
 
   </head>
   <body>
 
    <div class="modal hide">
       <div class="modal-div">
-              <i class="fa-solid fa-xmark" id="exit-modal"></i><h2>Formulaire de contact</h2>
-      <form >
-        
+              <i class="fa-solid fa-xmark" id="exit-modal"></i>
+        <form class="modal-form"><h2>Formulaire de contact</h2>
+        <input type="text" name ="firstname" id="first-name" placeholder="Prénom" required>
+        <input type="text" name="name" id="name" placeholder="Nom" required>
+        <input type="email" name="email" id="email" placeholder="Email" required>
+        <input type="text" name="subject" id="subject" placeholder="Sujet" required>
+        <textarea name="message" id="message" placeholder="Message:" required></textarea>
+        <input type="submit" value="Envoyer">
 
-       <input type="text" name ="firstname" id="first-name" placeholder="Prénom" required>
-       <input type="text" name="name" id="name" placeholder="Nom" required>
-       <input type="email" name="email" id="email" placeholder="Email" required>
-       <input type="text" name="subject" id="subject" placeholder="Sujet" required>
-      <textarea name="message" id="message" placeholder="Message:" required></textarea>
-      <input type="submit" value="Envoyer">
+        </form>
+        <div class="response hide">
+          <i  id="response-icon"></i>
+          <p></p>
 
-      </form>
+        </div>
       </div>
 
       
