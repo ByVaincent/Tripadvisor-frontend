@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       const response = await axios.post(
-        "http://site--backend-mailer-tripadvisor-replica--t2qjkc2tpc24.code.run/connection",
+        "https://site--backend-mailer-tripadvisor-replica--t2qjkc2tpc24.code.run/connection",
         {
           firstName,
           name,
