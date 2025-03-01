@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modalElement.classList.toggle("hide");
   });
 
-  modalElement.addEventListener("click", (event) => {
+  modalElement.addEventListener("mousedown", (event) => {
     if (event.target === modalElement) {
       modalElement.classList.toggle("hide");
     }
