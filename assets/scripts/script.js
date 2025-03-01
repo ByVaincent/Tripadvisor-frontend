@@ -40,13 +40,16 @@ document.addEventListener("DOMContentLoaded", () => {
     const responseIconElement = document.getElementById("response-icon");
 
     try {
-      const response = await axios.post("http://localhost:3000/connection", {
-        firstName,
-        name,
-        email,
-        subject,
-        message,
-      });
+      const response = await axios.post(
+        "http://site--backend-mailer-tripadvisor-replica--t2qjkc2tpc24.code.run/connection",
+        {
+          firstName,
+          name,
+          email,
+          subject,
+          message,
+        }
+      );
 
       //display positive response
       formElement.classList.toggle("hide");
